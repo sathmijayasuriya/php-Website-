@@ -5,6 +5,9 @@ body {
     background-color: #f4f4f4;
     height: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .top-header {
     background-color: #6F9898;
@@ -156,6 +159,7 @@ body {
     font-weight: bold;
     border-radius: 4px;
     margin-top: 10px;
+
 }
 
 .back-to-top:hover {

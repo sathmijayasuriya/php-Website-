@@ -8,3 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.classList.toggle("full-width");
   });
 });
+
+document.querySelector('.back-to-top').addEventListener('click', function (e) {
+  e.preventDefault(); 
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // scrolling
+  });
+});
