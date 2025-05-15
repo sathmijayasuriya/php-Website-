@@ -210,3 +210,20 @@ p.tight {
     font-size: 18px;
     margin-bottom: 5px;
 }
+.footer{
+    background-color: #1e3e3e;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+}
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+.footer a {
+    color: white;
+    /* text-decoration: none; */
+}

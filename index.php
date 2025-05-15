@@ -24,6 +24,10 @@
             <section id="content-area">
                 <?php include 'get-content.php'; ?>
             </section>
+            <section class="footer">
+                <p>© You can copy, edit and publish this template but please leave a visible link to our website.</p>
+                <p><a href="https://html5-templates.com/">HTML5 Templates</a></p>
+            </section>    
         </main>
     </div>
 <script src="script.js?v=<?= time() ?>"></script>
