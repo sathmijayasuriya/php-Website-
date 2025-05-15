@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.top-header {
+    background-color: #6F9898;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+}
+
+.nav-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    height: 3px;
+    background-color: black;
+    width: 90%;
+}
+.hamburger:hover {
+    background-color: #2f4f4f;
+}
+.hamburger:hover .line {
+    background-color: white;
+}
+
+/* Navigation Buttons */
+.nav-buttons button {
+    margin: 0 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #293636;
+    font-weight: bold;
+}
+
+.nav-buttons button:hover {
+    color: #000000;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-left: 8px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.social-icons i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons .fa-square-facebook {
+    color: #2d5ec7;
+}
+
+.social-icons .fa-youtube {
+    color: #cc0000;
+}
+
+.social-icons .fa-linkedin {
+    color: #0077b5;
+}
+
+.social-icons .fa-square-x-twitter {
+    color: #000000;
+}
+
+/* side bar */
+.sidebar {
+    width: 260px;
+    background-color: #9DC1C1;
+    padding: 20px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 50px; /* or top: 0 if you want it to start right below the header */
+    align-self: flex-start; /* ensures proper height handling */
+    /* height: fit-content; */
+    max-height: auto; /* account for top offset or padding */
+    /* overflow: auto; */
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+
+}
+.sidebar.hidden {
+  display: none;
+  transform: translateX(-120%);
+
+}
+
+.sidebar h1 {
+    color: #2e2e2e;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color:#334444;
+}
+
+.sidebar-box {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.back-to-top {
+    text-align: center;
+    background-color: #2f4f4f;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.back-to-top:hover {
+    background-color: #1e3e3e;
+}
+
+/* Content */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh; 
+
+}
+
+.main-content {
+    flex: 1;
+    /* overflow-y: auto; */
+    padding: 30px;
+    background-color:   #ffffff;
+
+}
+.main-content.full-width {
+  flex: 1 1 100%;
+}
+
+
+.intro h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+p.tight {
+  margin: 0;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+.content-block h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
