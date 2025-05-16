@@ -33,4 +33,4 @@ google-services.json
 *.hprof
 
 #config fiiles
-config.php
+# config.php
